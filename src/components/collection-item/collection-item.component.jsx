@@ -1,6 +1,5 @@
 import React from "react";
 
-import CustomButton from "../custom-button/custom-button";
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.action";
 
@@ -17,8 +16,7 @@ const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
   return (
     <CollectionItemContainer>
-      <BackgroundImage imageUrl={imageUrl}
-      />
+      <BackgroundImage imageUrl={imageUrl} />
       <CollectionFooterContaienr>
         <NameContainer> {name} </NameContainer>
         <PriceContainer> {price} </PriceContainer>
